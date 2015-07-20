@@ -1,4 +1,3 @@
-#I have no idea what i am doing
 #get icalendar from https://github.com/collective/icalendar
 from icalendar import Calendar, Event
 from datetime import datetime, date
