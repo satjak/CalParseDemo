@@ -5,7 +5,6 @@ from datetime import datetime, date
 cal = Calendar()
 cal.add('prodid', '-//My calendar product//mxm.dk//')
 cal.add('version', '2.0')
-#somebullshit
 import pytz
 todaysdate = date.today()
 #this creates a variable for today's date
@@ -129,7 +128,6 @@ for component in gcal.walk():
 #THIS IS THE MOMENT!
 		if eventdate <= todaysdate:
 			cal.add_component(event) #add the table to the new calendar
-#The moment is over, damn... always so fast.
 		else:
 			dateRational = "The event: " + str(csummary) + " -- had a eventdate of: " + str(eventdate) + " -- which is greater than today: " + str(todaysdate) + " -- Here are the details"
 			eventfacts = []
